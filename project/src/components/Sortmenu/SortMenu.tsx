@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useAppDispatch } from '../../hooks/useAppDispatch';
 import { setSortKey } from '../../features/products/productsSlice';
 import "./SortMenu.css"

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ProductCatalog from './ProductCatalog';
 
 const HomePage = () => {
