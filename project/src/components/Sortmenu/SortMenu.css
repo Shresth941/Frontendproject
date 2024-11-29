@@ -1,0 +1,20 @@
+/* Dropdown Styling */
+.sort-menu-container ul {
+    z-index: 1000; /* Ensure dropdown is on top */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Better shadow for separation */
+    animation: fadeInDropdown 0.2s ease-in-out;
+    margin-top: 10px; /* Smooth fade-in animation */
+  }
+  
+  /* Animation */
+  @keyframes fadeInDropdown {
+    from {
+      opacity: 0;
+      transform: translateZ(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

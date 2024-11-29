@@ -1,0 +1,162 @@
+/* Container Styling for Header */
+.header-container {
+    background-color: #1a202c; /* Default dark background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    padding: 15px 0; /* Increased padding for better spacing */
+  }
+  
+  /* Container for aligning elements */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    color: #f6e05e; /* Soft yellow color for logo */
+    font-size: 2rem;
+    font-weight: 600; /* Slightly lighter for balance */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  /* Navigation Links */
+  nav a {
+    color: #cbd5e0; /* Light gray for links */
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffffff; /* Hover effect for links */
+    transform: translateY(-2px); /* Slightly lift the link on hover */
+  }
+  
+  /* Dark/Light Mode Button */
+  .toggle-btn {
+    padding: 0.6rem 1.5rem; /* Increase padding for better button size */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 40px; /* Fixed height */
+    justify-content: center;
+  }
+  
+  /* Light Mode Styling */
+  .toggle-btn.light {
+    background-color: #3182ce;
+    color: white;
+  }
+  
+  .toggle-btn.light:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Dark Mode Styling */
+  .toggle-btn.dark {
+    background-color: #4a5568;
+    color: white;
+  }
+  
+  .toggle-btn.dark:hover {
+    background-color: #2d3748;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .toggle-btn {
+      margin-top: 1rem;
+    }
+  
+    /* Logo Styling for mobile */
+    .logo {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    /* Links Styling for mobile */
+    nav a {
+      font-size: 1rem;
+      padding: 0.4rem;
+    }
+  }
+  
+  /* Dark Mode Customization */
+  html.dark {
+    background-color: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  html.dark .header-container {
+    background-color: #2d3748;
+  }
+  
+  html.dark nav a {
+    color: #edf2f7;
+  }
+  
+  html.dark .toggle-btn.light {
+    background-color: #2b6cb0;
+  }
+  
+  html.dark .toggle-btn.light:hover {
+    background-color: #3182ce;
+  }
+  
+  /* Flex container for aligning items */
+  .header-container .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Styling for the SortMenu */
+  .sort-container,
+  .search-container,
+  .toggle-btn-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-container {
+    flex-grow: 1; /* Allow SortMenu to take more space */
+  }
+  
+  .search-container {
+    flex-grow: 2; /* Allow SearchBar to take more space */
+  }
+  
+  .toggle-btn-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the SortMenu */
+  .sort-container .SortMenu {
+    max-width: 200px; /* Limit width of SortMenu */
+  }
+  
+  /* Styling for the SearchBar */
+  .search-container .SearchBar {
+    max-width: 300px; /* Limit width of SearchBar */
+  }
+  
