@@ -14,7 +14,7 @@ This is a product catalog application for an e-commerce website, built with **Vi
 - **API:** `https://fakestoreapi.com/products` (for fetching product data)
 - **State Management:** Redux Toolkit
 - **Build Tool:** Vite
-- **Deployment:** Vercel or Replit
+- **Deployment:** Vercel 
 
 ## Setup & Installation
 
